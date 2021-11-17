@@ -1,0 +1,181 @@
+
+.header {
+    background-color: gray;
+    gap: 10px;
+    padding: 1rem;
+    text-align: center;
+ 
+    
+}
+
+.header  img {
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+    
+}
+
+.header  input {
+    border: none;
+}
+
+.hero {
+    background-image: url(/Pics/geltona\ siena.jpg);
+    padding: 15rem 0;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.content{
+    display: grid;
+    justify-items: center;
+    grid-gap: 0.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "1 2 3"
+    "How How How"
+    "lorem lorem lorem"
+    "co co co"
+    "ct ct ct"
+}
+
+img {
+    width: 100%;
+    clip-path: circle();
+    filter: grayscale(100%);
+}
+
+.first {
+    grid-area: "1";
+}
+
+.second {
+    grid-area: "2";
+}
+
+.third {
+    grid-area: "3";
+}
+
+h4.how {
+    color: rgb(141, 141, 18);
+    grid-area: How;
+}
+
+.lorem {
+    grid-area: lorem;
+    margin: 0;
+}
+
+.container-one {
+    margin-top: 1rem;
+    grid-area: co;
+    text-align: center;
+    color: rgb(141, 141, 18);
+}
+
+.container-two {
+    margin-top: 1rem;
+    grid-area: ct;
+    text-align: center;
+    color: rgb(141, 141, 18)
+}
+
+.container-one > img {
+    width: 20rem;
+}
+
+.container-two > img {
+    width: 20rem;
+}
+
+
+div > h3 {
+    margin: 0;
+}
+div > a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+.yellow {
+    background-color: rgb(179, 179, 11);
+    padding: 0.5rem;
+}
+
+.gray {
+    background-color: rgb(128, 128, 128);
+    padding: 5rem;
+    text-align: center;
+}
+
+.gray h4 {
+    color: rgb(179, 179, 11);
+    margin-bottom: 5px;
+}
+
+.gray a {
+    color: whitesmoke;
+    display: block;
+}
+
+@media screen and (min-width: 600px){
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header img {
+        margin: 0;
+    }
+
+    
+    .content {
+        margin-top: -5.5rem;
+        grid-template-columns: repeat(3, 33%);
+        
+        grid-template-areas:
+        "1 2 3"
+        "How How How"
+        "lorem lorem lorem"
+        "co .  ct"
+    }
+    #daniela > img{
+        width: 80%;
+    }
+
+    #lisa > img{
+        width: 80%;
+    }
+
+    .team {
+        grid-area: team;
+    }
+
+    .learnMore {
+        grid-area: learn;
+    }
+
+    .meetUs {
+        grid-area: meet;
+    }
+
+    .contact {
+        grid-area: contact;
+    }
+
+    .gray {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-row: 1fr;
+        grid-template-areas: 
+        "team learn meet contact";
+    }
+
+}   
+   
+    
